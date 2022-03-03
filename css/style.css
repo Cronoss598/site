@@ -1,0 +1,266 @@
+header {
+    background-color: #292929;
+}
+
+.center-block-main {
+    max-width: 990px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.logo {
+    float:  left;
+    margin-top: 45px;;
+}
+
+.menu {
+    float: right;
+}
+
+.menu li {
+    float: left;
+}
+
+.menu li a {
+    display: block;
+    font-weight: 600;
+    color: #fff;
+    padding: 50px 30px;
+    text-decoration: none;
+    border-bottom: 3px solid #292929;
+    transition: all .1s linear;
+}
+
+.menu li a:hover {
+    color: #339933;
+    border-bottom: 3px solid #339933;
+}
+
+.content {
+    border-left: 1px solid #e1dfdf;
+    border-right: 1px solid #e1dfdf;
+}
+
+main {
+    float: left;
+    width: 63%;
+    margin-top: 70px;
+}
+
+aside {
+    float: right;
+    width: 28%;
+    margin-top: 70px;
+}
+
+article {
+    margin-bottom: 70px;
+}
+
+article > header {
+    position: relative;
+    background-color: none;
+    font-size: 0;
+    margin-bottom: 10px;
+    overflow: hidden ;
+}
+
+.publish {
+    position: absolute;
+    bottom: -40px;
+    width: 100%;
+    padding: 10px 20px;
+    background-color: rgba(0, 0, 0, 0.664);
+    color: #fff;
+    font-size: 13px;
+    box-sizing: border-box;
+    transition: bottom .1s linear;
+}
+
+main header:hover .publish {
+    bottom: 0;
+}
+
+article h2 {
+    font-size: 1.72em;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #4f4e4e;
+    margin: 0 0 40px 20px;
+    line-height: 1.1em;
+}
+
+article > p {
+    margin: 0 0 20px 20px;
+    line-height: 1.3em;
+}
+
+.more {
+    display: inline-block;
+    color: #c1c1c1;
+    border: 2px solid #c1c1c1;
+    padding: 7px 20px;
+    text-decoration: none;
+    border-radius: 20px;
+    transition: all .1s linear;
+}
+
+.more:visited {
+    color: #c1c1c1;
+}
+
+.more:hover {
+    color: #339933;
+    border-color: #339933;
+}
+
+.widget {
+    margin-bottom: 50px;
+}
+
+.widget > h2 {
+    padding: 15px 20px;
+    margin-bottom: 20px;
+    background-color: #f7f7f7;
+    font-size: 1em;
+    font-weight: 600;
+    color: #6c6969;
+    text-transform: uppercase;
+    border-left: 2px solid #339933;
+}
+
+.widget input.search {
+    width: 100%;
+    padding: 15px 20px;
+    font-size: .75em;
+    border: 1px solid #e1dfdf;
+    border-right: none;
+    color: #e1dfdf;
+}
+
+.widget > nav {
+    margin-left: 20px;
+}
+
+.subscribe {
+    position: relative;
+    width: 100%;
+    height: 45.600px;
+}
+
+.subscribe-input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    border: 1px solid #e1dfdf;
+    border-right: none;
+    font-size: .75em;
+    color: #e1dfdf;
+    box-sizing: border-box;
+    padding: 15px 50px 15px 20px;
+}
+
+.subscribe-input:focus {
+    padding: 15px 50px 15px 20px;
+}
+
+.subscribe-image {
+    position: absolute;
+    right: 20px;
+    top: 12px;
+}
+
+.pager {
+    padding: 30px;
+    border-top: 1px solid #e1e0e0;
+}
+
+.previous-link,
+.next-link {
+    vertical-align: middle;
+    font-size: 1.125em;
+    color: #818181;
+    text-transform: uppercase;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.previous-link:visited,
+.next-link:visited {
+    color: #818181
+}
+
+.previous-link:hover,
+.next-link:hover {
+    text-decoration: underline;
+    color:#339933;
+}
+
+.more:focus,
+.previous-link:focus,
+.next-link:focus {
+    text-decoration: none;
+}
+
+.pager p:nth-child(1) {
+    float: left;
+}
+
+.pager p:nth-child(2) {
+    float: right;
+}
+
+footer {
+    background-color: #f8f8f8;
+    color: #a6a6a6;
+    font-size: 0.8125em;
+    border-top: 1px solid #e1e0e0;
+    text-align: center;
+    padding: 70px 0px 140px 0px;
+}
+
+footer img {
+    margin-bottom: 30px;
+}
+
+footer span {
+    color: #939292;
+    font-weight: 700;
+}
+
+@media screen and (max-width: 768px) {
+    main,
+    aside {
+        width: 100%;
+        float: none;
+    }
+
+    main {
+        margin-top: 10px;
+    }
+
+    .logo {
+        margin-top: 22.5px;
+    }
+
+    .menu li a {
+        padding: 25px 30px;
+    }
+
+    article img {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 548px) {
+    .logo {
+        display: block;
+        float: none;
+        margin: 22.5px auto 0 auto;
+    }
+
+    .menu {
+        float: none;
+    }
+}
